@@ -1,34 +1,42 @@
 <header class="header">
   <div class="header__container container">
-    <div class="header__logo logo">
-      <img src="images/global/logo.svg" alt="Логотип" />
-    </div>
-    <div class="header__contacts">
-      <div class="header__contacts-items">
-        <div class="header__contacts-item">
-          <svg class="icon">
-            <use xlink:href="svg-sprite/sprite.svg#geo"></use>
-          </svg>
-          <p class="header__contacts-item_info">
-            г. Екатеринбург, ул. Радищева, д. 6А, офис 21106а
-          </p>
-        </div>
-        <div class="header__contacts-item">
-          <svg class="icon">
-            <use xlink:href="svg-sprite/sprite.svg#mail"></use>
-          </svg>
-          <p class="header__contacts-item_info">info@dos-66.ru</p>
-        </div>
+    <div class="header__wrapper box">
+      <div class="header__logo logo">
+        <img src="images/global/logo.svg" alt="Логотип" />
       </div>
-      <div class="header__contacts-items">
-        <div class="header__contacts-item">
-          <svg class="icon">
-            <use xlink:href="svg-sprite/sprite.svg#phone"></use>
-          </svg>
-          <span>8 343 289 04 51</span>
+      <div class="header__contacts box m:align-center">
+        <div class="header__contacts-items item m:hide m:show@lg">
+          <div class="header__contacts-item">
+            <svg class="icon">
+              <use xlink:href="svg-sprite/sprite.svg#geo"></use>
+            </svg>
+            <p class="header__contacts-item_info">
+              г. Екатеринбург, ул. Радищева, д. 6А, <br />
+              офис 21106а
+            </p>
+          </div>
+          <div class="header__contacts-item">
+            <svg class="icon">
+              <use xlink:href="svg-sprite/sprite.svg#email"></use>
+            </svg>
+            <p class="header__contacts-item_info">info@dos-66.ru</p>
+          </div>
         </div>
-        <div class="header__contacts-item">
-          <button data-modal-open="modal-form">Заказать консультацию</button>
+        <div class="header__contacts-items">
+          <div class="header__contacts-item">
+            <svg class="icon">
+              <use xlink:href="svg-sprite/sprite.svg#phone"></use>
+            </svg>
+            <span>8 343 289 04 51</span>
+          </div>
+          <div class="header__contacts-item">
+            <button
+              class="header__contacts-item_btn"
+              data-modal-open="modal-form"
+            >
+              Заказать консультацию
+            </button>
+          </div>
         </div>
       </div>
     </div>

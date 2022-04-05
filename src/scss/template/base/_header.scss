@@ -1,10 +1,103 @@
 .header {
-
     &__container {
-        
-    }
+        .header__wrapper {
+            flex-flow: column nowrap;
+            padding: size(21) size(0);
+            @include media(lg) {
+                flex-flow: row nowrap;
 
-    &__mobile {
+            }
+            .logo {
+                margin: 0 auto;
+                @include media(lg) {
+                    margin: 0;
+                }
+            }
+            .header__contacts {
+                margin-top: size(15);
+                margin-left: size(0);
+                @include media(lg) {
+                    margin-top: size(0);
+                    margin-left: size(40);
+                }
+                @include media(hd) {
+                    margin-top: size(0);
+                    margin-left: size(75);
+                }
+                .header__contacts-items {
+                    &:not(:first-child) {
+                        @include media(lg) {
+                            margin-left: size(40);
+                        }
+                        @include media(hd) {
+                            margin-left: size(75);
+                        }
+                    }
+                    .header__contacts-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:not(:last-child) {
+                            margin-bottom: size(10);
+                            
+                        }
+                        font-size: size(16);
+                        font-weight: 500;
+                        @include media(lg) {
+                            justify-content: flex-start;
+                            &:not(:last-child) {
+                                margin-bottom: size(20);
+                                
+                            }
+                        }
+                        @include media(hd) {
+                            font-size: size(20);
+                            justify-content: flex-start;
+                            &:not(:last-child) {
+                                margin-bottom: size(20);
+                                
+                            }
+    
 
+                        }
+
+                        .header__contacts-item_info {
+                            @include media(lg) {
+                                margin-left: size(15);
+                            }
+    
+                        }
+                        span {
+                            font-weight: 700;
+                            font-size: size(18);
+                            margin-left: size(15);
+                            @include media(lg) {
+                                font-size: size(30);
+                            }
+
+                        }
+                        .header__contacts-item_btn {    
+                            position: relative;
+                            font-weight: 600;
+                            color: $color-red;
+                            &::after {
+                                position: absolute;
+                                display: block;
+                                bottom: 0;
+                                content: '';
+                                width: 100%;
+                                height: 1px;
+                                background-color: $color-red;
+                            }
+                            @include media(lg) {
+                                font-size: size(20);
+
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
     }
 }
