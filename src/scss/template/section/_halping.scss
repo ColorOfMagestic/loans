@@ -1,5 +1,74 @@
 .halping { 
-    position: relative;   
-    border-top: 1px solid red;
-    min-height: 100vh;
+    background-color: #ecf4f6;
+    padding: size(60) 0;
+    @include media(lg) {
+        padding: size(126) 0;
+    }
+    &__title {
+        text-align: center;
+    }
+
+    &__steps {
+        flex-direction: column;
+        margin-top: size(30);
+        @include media(md) {
+            flex-flow: row wrap;
+
+        }
+        @include media(lg) {
+            margin-top: size(47);
+        }
+        &-item {
+            flex-direction: column;
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: size(20);
+                margin-right: size(0);
+            }
+            @include media(md) {
+                width: 48%;
+            }
+            @include media(lg) {
+                &:not(:last-child) {
+                    margin-bottom: size(0);
+                    margin-right: size(35);
+                }
+                
+            }
+            @include media(hd) {
+                &:not(:last-child) {
+                    margin-right: size(25);
+                }
+                
+            }
+            &-img {
+                width: 50%;
+                @include media(md) {
+                    width: 70%;
+                }
+                @include media(lg) {
+                    width: 90%;
+
+                }
+                @include media(hd) {
+                    width: 255px;
+                }
+            }
+            &-text {
+                width: 70%;
+                text-align: center;
+                margin-top: size(18);
+
+                a {
+                    color: $color-red;
+                    text-decoration: underline;
+                }
+                @include media(lg) {
+                    width: 100%;
+                    margin-top: size(38);
+                    font-size: size(25);
+                }
+            }
+        }
+    }
 }
