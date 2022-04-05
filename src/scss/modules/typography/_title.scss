@@ -15,22 +15,22 @@
 
     //* размеры
     &--size {
-        &-sm {   
-            font-size: size(24);
-            @include media(lg) {
-                font-size: size(36);
-            }
-        }
+        // &-sm {   
+        //     font-size: size(24);
+        //     @include media(lg) {
+        //         font-size: size(36);
+        //     }
+        // }
         &-md {   
             font-size: size(24);
             @include media(lg) {
-                font-size: size(56);
+                font-size: size(55);
             }
         }
         &-lg {   
             font-size: size(24);
             @include media(lg) {
-                font-size: size(72);
+                font-size: size(70);
             }
         }
     }
