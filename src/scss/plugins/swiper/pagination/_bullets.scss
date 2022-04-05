@@ -40,11 +40,12 @@
      width: 1em;
      height: 1em;
      display: inline-flex;
-   align-items: center;
-   justify-content: center;
+      align-items: center;
+      justify-content: center;
+      border:1px solid $color-red;
      border-radius: 50%;
-     background: rgb(163, 163, 163);
-   font-size: size(24);
+     background: #fff;
+   font-size: size(18);
    flex: 0 0 auto;
    transition-duration: $td;
    &:not(:last-child) {
@@ -55,7 +56,7 @@
      }
 }
 .swiper-pagination-bullet-active {
- background: #000;
+ background: $color-red;
 }
 .swiper-pagination._custom .swiper-pagination-bullet{
    width: size(44);

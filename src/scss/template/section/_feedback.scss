@@ -1,5 +1,95 @@
-.feedback { 
-    position: relative;   
-    border-top: 1px solid red;
-    min-height: 100vh;
+.feedback {
+    position: relative;
+    padding-top: size(60);
+
+    @include media(lg) {
+    padding-top: size(117);
+}
+    &__title {
+        text-align: center;
+    }
+    &-swiper {
+        margin-top: size(30);
+        padding:size(10);
+        @include media(lg) {
+            padding: size(8) size(5);
+            margin-top: size(40);
+        }
+        .swiper-slide {
+            padding: size(35) size(28) size(33);
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px  #eae9e9;
+            @include media(lg) {
+                padding: size(65) size(48) size(53);
+            }
+
+            &-title {
+                position: relative;
+                font-size: size(25);
+
+                &::after {
+                    position: absolute;
+                    bottom: 50%;
+                    right: 0;
+                    display: block;
+                    content: "";
+                    width: 36px;
+                    height: 33px;
+                    background-image: url(../images/feedback/quote.svg);
+                    background-size: cover;
+                    @include media(lg) {
+                        width: 56px;
+                        height: 53px;
+    
+                    }
+
+                }
+            }
+            &-text {
+                margin-top: size(30);
+                font-size: size(14);
+                @include media(lg) {
+                    font-size: size(18);
+                    
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+        margin-top: size(35);
+
+        @include media(lg) {
+            margin-top: size(63);
+        }
+    }
+
+    .swiper-button {
+        display: none;
+        @include media(lg) {
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            display: block;
+        }
+    }
+    .swiper-button-prev {
+        left: 10%;
+    }
+    .swiper-button-next {
+        right: 10%;
+    }
+    .insert {
+        height: 150px;
+        margin-top: size(60);
+
+        background-image: url(../images/feedback/bg_3.png);
+        background-size: cover;
+        @include media(lg) {
+            width: 100%;
+            height: 396px;
+            margin-top: size(130);
+        }
+    }
 }
