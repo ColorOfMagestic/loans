@@ -7,16 +7,18 @@
     border: none;
     border-radius: 5px;
     background-color: #fff;
+    color: #797a7b;
+ 
     @media (pointer: fine) {
         &:hover {
-            color: #000;
+            color: #797a7b;
         }
         &:active {
-            color: #000;
+            color: #797a7b;
         }
     }
     &:active {
-        color: #000;
+        color: currentColor;
     }
     //*
     &__input {
