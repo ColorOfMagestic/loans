@@ -16,6 +16,8 @@
 
         }
         @include media(lg) {
+            flex-flow: row nowrap;
+
             margin-top: size(47);
         }
         &-item {

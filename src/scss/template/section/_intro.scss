@@ -1,7 +1,7 @@
 .intro {
     background-image: url(../images/intro/intro_bg.jpg);
     background-size: cover;
-    padding: size(40);
+    padding: size(40) 0;
     @include media(lg) {
         padding-top: size(185);
         padding-bottom: size(65);
