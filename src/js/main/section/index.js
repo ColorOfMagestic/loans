@@ -1,0 +1,7 @@
+@@include("header.js",{})
+@@include("home.js",{})
+@@include("footer.js",{})@@include("intro.js",{}) 
+@@include("deposit.js",{}) 
+@@include("halping.js",{}) 
+@@include("application.js",{}) 
+@@include("feedback.js",{}) 
