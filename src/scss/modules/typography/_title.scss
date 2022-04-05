@@ -28,7 +28,7 @@
             }
         }
         &-lg {   
-            font-size: size(24);
+            font-size: size(32);
             @include media(lg) {
                 font-size: size(70);
             }

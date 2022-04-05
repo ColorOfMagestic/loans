@@ -1,5 +1,74 @@
-.intro { 
-    position: relative;   
-    border-top: 1px solid red;
-    min-height: 100vh;
+.intro {
+    background-image: url(../images/intro/intro_bg.jpg);
+    background-size: cover;
+    padding: size(40);
+    @include media(lg) {
+        padding-top: size(185);
+        padding-bottom: size(65);
+
+    }
+    &__title {
+        text-align: center;
+        @include media(lg) {
+            text-align: left;
+        }
+    }
+    &__text {
+        text-align: center;
+        @include media(lg) {
+            text-align: left;
+        }
+        margin-top: size(20);
+        margin-bottom: size(25);
+
+        @include media(lg) {
+            margin-top: size(35);
+            margin-bottom: size(40);
+    
+        }
+    }
+    .form {
+        .form-send {
+            
+            .form-field {
+                margin-bottom: size(25);
+                @include media(lg) {
+                    width: 24%;
+                    margin-bottom: 0;
+                    margin-right: size(25);
+                }
+            }
+            @include media(lg) {
+                display: flex;
+            }
+            .form-send__btn {
+                @include media(lg) {
+                    width: 24%;
+                }
+
+            }
+        }
+    }
+
+    .intro__features {
+        margin-top: size(40);
+
+
+        @include media(lg) {
+            margin-top: size(75);
+        }
+        .intro__features-item {
+            padding:size(25) size(50);
+            border-radius: 5px;
+            background-color: #fff;
+            flex-direction: column;
+        }
+        .intro__features-item_text {
+            margin-top: size(18);
+            text-align: center;
+            font-size: size(18);
+        }
+
+    }
+
 }
