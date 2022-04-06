@@ -78,8 +78,13 @@
 
                 a {
                     display: block;
+                    font-size: size(12);
                     color: $color-red;
                     text-decoration: underline;
+                    @include media(lg) {
+                        font-size: size(25);
+                    }
+
                 }
             }
 
@@ -229,11 +234,19 @@
 
             }
         }
-        &-item--center {
-            @include media(lg) {
-                // flex-basis: 50%;
-            }
+    }
+
+    .copyright {
+        margin-top: size(30);
+        text-align: center;
+        color: #dcd9d9;
+        a {
+            color:#fff;
         }
+        @include media(lg) {
+            text-align: right;
+        }
+        
     }
   
 }

@@ -94,19 +94,14 @@
                         background-image: url(../images/deposit/app.png);
                     }
                 }
+                .dk {
+                    &::before {
+                        background-image: url(../images/deposit/dk.png);
+                    }
+                }
                 .mag {
                     &::before {
                         background-image: url(../images/deposit/mag.png);
-                    }
-                }
-                .car {
-                    &::before {
-                        background-image: url(../images/deposit/car.png);
-                    }
-                }
-                .hotel {
-                    &::before {
-                        background-image: url(../images/deposit/hotel.png);
                     }
                 }
                 .zem {
@@ -122,11 +117,6 @@
                 .office {
                     &::before {
                         background-image: url(../images/deposit/office.png);
-                    }
-                }
-                .prom {
-                    &::before {
-                        background-image: url(../images/deposit/prom.png);
                     }
                 }
             }
