@@ -17,6 +17,7 @@
         }
         .swiper-slide {
             padding: size(35) size(28) size(33);
+            height: auto;
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0px 0px 10px  #eae9e9;
@@ -69,7 +70,7 @@
         display: none;
         @include media(lg) {
             position: absolute;
-            top: 50%;
+            top: 30%;
             z-index: 1;
             display: block;
         }
