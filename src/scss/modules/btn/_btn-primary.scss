@@ -7,6 +7,7 @@
     border-radius: 5px;
     background:  $btn-bg;   
     color: $btn-color;
+    overflow: hidden;
     .icon {
         color: $btn-color;
     }
@@ -18,4 +19,22 @@
     &:active {
         background: $btn-bg-hover;    
     }
+    &::before {
+        position: absolute;
+        left: size(-20);
+        display: block;
+        content: '';
+        width: size(2);
+        height: 110%;
+        background-color: #fff;
+        transform: rotate(30deg);
+        box-shadow: 0 1px 8px #fff;
+      }
+      &:hover {
+          &::before {
+              transition: 1s ease-in;
+              left:110%;
+          }
+      }
+
 }
