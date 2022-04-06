@@ -12,18 +12,6 @@
         background-size: 110%;
     }
     &-wrapper {
-        &_img {
-            position: absolute;
-            z-index: 1;
-            bottom: 0;
-            width: 43%;
-            @include media(md) {
-                left: 17%;
-            }
-            @include media(lg) {
-                left: 12%;
-            }
-        }
         .form-block {
             position: relative;
             z-index: 0;
@@ -38,6 +26,25 @@
                 padding-left: size(160);
                 margin-left: size(200);
             }
+
+            &_img {
+                position: absolute;
+                z-index: 1;
+                @include media(md) {
+                    left: -60%;
+                    bottom: size(-60);
+                    width: 100%;
+
+                }
+                @include media(lg) {
+                    width: 90%;
+                    left: -40%;
+                    bottom: size(-135);
+
+                }
+            }
+
+
             &_title {
                 text-align: center;
                 @include media(lg) {
