@@ -1,116 +1,125 @@
 <footer class="footer">
-  <div class="footer__content">
-    <div class="footer__content-contact">
-      <div class="footer__content-contact_item">
-        <h5 class="footer__content-contact_item-title">Адрес</h5>
-        <p class="footer__content-contact_item-text">
-          г. Екатеринбург, ул. Радищева, д. 6А, офис 21106а
+  <div class="container">
+    <div class="footer__content box">
+      <div class="footer__content-contact">
+        <div class="footer__content-contact_item">
+          <h5 class="footer__content-contact_item-title t:700">Адрес</h5>
+          <p class="footer__content-contact_item-text">
+            г. Екатеринбург, ул. Радищева, д. 6А, офис 21106а
+          </p>
+        </div>
+        <div class="footer__content-contact_item mail">
+          <h5 class="footer__content-contact_item-title">Email</h5>
+          <a href="mailto:info@dos-66.ru">info@dos-66.ru</a>
+        </div>
+        <div class="footer__content-contact_item phone">
+          <h5 class="footer__content-contact_item-title">Телефон</h5>
+          <a href="tel:83432890451">8 343 289 04 51 </a>
+          <a href="tel:83432890451">8 343 289 04 51 </a>
+        </div>
+      </div>
+      <div class="footer__content-img item m:hide m:show@lg">
+        <img src="images/global/line.png" alt="" />
+      </div>
+      <div class="footer__content-form">
+        <h2 class="footer__content-form_title">Срочно нужен займ?</h2>
+        <p class="footer__content-form_text">Отправьте нам сообщение!</p>
+        <form id="" class="form js-form">
+          <input
+            class="form-input-title"
+            type="hidden"
+            name="form-title"
+            value=""
+          />
+
+          <div class="form-send">
+            <div class="form-send__message">
+              <div class="form-send__loading"><span></span></div>
+              <p class="form-send__success">
+                Спасибо, ваша заявка принята. Менеджер свяжется с вами в
+                ближайшее время
+              </p>
+              <p class="form-send__error">
+                Что-то пошло не так. Заявка не отправлена.
+              </p>
+            </div>
+            <label class="form-field">
+              <input
+                class="form-field__input"
+                placeholder="text"
+                type="text"
+                name="name"
+              />
+              <span class="form-field__text">Введите Имя</span>
+            </label>
+            <label class="form-field">
+              <input
+                class="form-field__input form-phone"
+                placeholder="phone"
+                type="tel"
+                name="phone"
+              />
+              <span class="form-field__text">Введите Номер телефона</span>
+            </label>
+            <label class="form-field">
+              <input
+                class="form-field__input"
+                placeholder="text"
+                type="text"
+                name="name"
+              />
+              <span class="form-field__text"
+                >Сколько денег в рублях вы хотите занять?</span
+              >
+            </label>
+            <label class="form-field">
+              <input
+                class="form-field__input"
+                placeholder="text"
+                type="text"
+                name="name"
+              />
+              <span class="form-field__text"
+                >Какой залог вы желаете использовать?</span
+              >
+            </label>
+            <button
+              type="submit"
+              class="form-send__btn btn btn--primary btn--size-md"
+            >
+              Отправить сообщение
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer__info box">
+      <div class="footer__info-item">
+        <h4 class="footer__info-item_title">ООО “Новые технологии”</h4>
+        <p class="footer__info-item_text">ИНН 1252125485</p>
+        <p class="footer__info-item_text">КПП 125126325</p>
+        <p class="footer__info-item_text">ОГРН 1252136598541</p>
+        <a class="footer__info-item_link" target="_blank" href="#"
+          >Политика конфиденцальности</a
+        >
+      </div>
+      <div class="footer__info-item footer__info-item--center">
+        <h4 class="footer__info-item_title">О компании</h4>
+        <p class="footer__info-item_text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas alias
+          optio quia cumque tenetur odio praesentium animi, rerum atque
+          obcaecati fuga ut rem hic, perferendis, magni delectus corrupti
+          explicabo repellat.
         </p>
       </div>
-      <div class="footer__content-contact_item">
-        <h5 class="footer__content-contact_item-title">Email</h5>
-        <a href="mailto:info@dos-66.ru">info@dos-66.ru</a>
+      <div class="footer__info-item">
+        <h4 class="footer__info-item_title">Клиентам</h4>
+        <p class="footer__info-item_text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          pariatur, cupiditate quidem odit perferendis dolores assumenda minus
+          veniam neque quibusdam!
+        </p>
       </div>
-      <div class="footer__content-contact_item">
-        <h5 class="footer__content-contact_item-title">Телефон</h5>
-        <a href="tel:83432890451">8 343 289 04 51 </a>
-        <a href="tel:83432890451">8 343 289 04 51 </a>
-      </div>
-    </div>
-    <div class="footer__content-form">
-      <h2 class="footer__content-form_title title--size-md">
-        Срочно нужен займ?
-      </h2>
-      <p class="footer__content-form_text">Отправьте нам сообщение!</p>
-      <form id="" class="form js-form">
-        <input
-          class="form-input-title"
-          type="hidden"
-          name="form-title"
-          value=""
-        />
-
-        <div class="form-send">
-          <div class="form-send__message">
-            <div class="form-send__loading"><span></span></div>
-            <p class="form-send__success">
-              Спасибо, ваша заявка принята. Менеджер свяжется с вами в ближайшее
-              время
-            </p>
-            <p class="form-send__error">
-              Что-то пошло не так. Заявка не отправлена.
-            </p>
-          </div>
-          <label class="form-field">
-            <input
-              class="form-field__input"
-              placeholder="text"
-              type="text"
-              name="name"
-            />
-            <span class="form-field__text">text</span>
-          </label>
-          <label class="form-field">
-            <input
-              class="form-field__input"
-              placeholder="text"
-              type="text"
-              name="name"
-            />
-            <span class="form-field__text">text</span>
-          </label>
-          <label class="form-field">
-            <input
-              class="form-field__input"
-              placeholder="text"
-              type="text"
-              name="name"
-            />
-            <span class="form-field__text">text</span>
-          </label>
-          <label class="form-field">
-            <input
-              class="form-field__input"
-              placeholder="text"
-              type="text"
-              name="name"
-            />
-            <span class="form-field__text">text</span>
-          </label>
-          <button
-            type="submit"
-            class="form-send__btn btn btn--primary btn--size-md"
-          >
-            Перезвоните мне
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div class="footer__info">
-    <div class="footer__info-item">
-      <h4 class="footer__info-item_title">ООО “Новые технологии”</h4>
-      <p class="footer__info-item_text">ИНН 1252125485</p>
-      <p class="footer__info-item_text">КПП 125126325</p>
-      <p class="footer__info-item_text">ОГРН 1252136598541</p>
-      <a class="footer__info-item_link" href="#">Политика конфиденцаальности</a>
-    </div>
-    <div class="footer__info-item">
-      <h4 class="footer__info-item_title">О компании</h4>
-      <p class="footer__info-item_text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas alias
-        optio quia cumque tenetur odio praesentium animi, rerum atque obcaecati
-        fuga ut rem hic, perferendis, magni delectus corrupti explicabo
-        repellat.
-      </p>
-    </div>
-    <div class="footer__info-item">
-      <h4 class="footer__info-item_title">Клиентам</h4>
-      <p class="footer__info-item_text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        pariatur, cupiditate quidem odit perferendis dolores assumenda minus
-        veniam neque quibusdam!
-      </p>
     </div>
   </div>
 </footer>
